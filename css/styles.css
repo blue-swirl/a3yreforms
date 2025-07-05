@@ -20,7 +20,42 @@ html {
     font-size: 16px;
     font-family: OpenSans;
     --color-main: #f0e021;
-    --color-sec: #0a2463;
+    --color-sec: #ad6a4b;
+    --compl-color:  #7f390b;
+    --wood-light:  #c19a6b;
+    --text-color: #fcf3e9;
+    --light-color: #c8c2b7;
+}
+
+main {
+    background-image: linear-gradient(#111, #0009, #0003), url("/imgs/background-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 6rem 2rem;
+}
+
+.section-header {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.section-description {
+    padding-bottom: 3rem;
+    width: 70%;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
 }
 
 /************************************ HEADER RULES *****************************************/
@@ -28,9 +63,10 @@ html {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 1rem 1rem  0.8rem 1rem;
     width: 100vw;
     background-color: var(--color-sec);
+    box-shadow: 0 0 0.5rem #444;
 }
 
 .header__firm-container {
@@ -68,8 +104,8 @@ html {
 }
 
 .header__nav-link-img {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .header__firm-logo .dark {
@@ -90,3 +126,267 @@ html {
 }
 
 /************************************ HERO RULES *****************************************/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    padding-top: 8rem;
+    height: 80vh;
+}
+
+.hero__firm-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__firm-logo {
+    width: 7rem;
+}
+
+.hero__firm-logo .light {
+    fill: var(--color-main);
+}
+
+.hero__firm-logo .dark {
+    fill: var(--color-sec);
+}
+
+.hero__firm-title {
+    width: 10rem;
+    color: var(--color-main);
+    font-size: 4.5rem;
+    font-weight: 800;
+    font-family: Rajdhani;
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+}
+
+.hero__firm-title-under {
+    display: block;
+    font-size: 2rem;
+    font-family: OpenSans;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.hero__slogan-container {
+    color: #eee;
+    text-transform: lowercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+.hero__slogan-1st {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero__slogan-2nd {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.hero__button {
+    margin: 3rem 0;
+    padding: 0.8rem 3rem;
+    color: #111;
+    font: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: var(--color-main);
+    border-radius: 0.5rem;
+    border: 1px solid #111;
+    box-shadow: 0 0 1rem #080808;
+}
+
+.hero__nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 80%;
+    list-style: none;
+}
+
+.hero__nav-link img {
+    width: 1.2rem;
+}
+
+/************************************ SERVICES RULES *****************************************/
+.services {
+    background: linear-gradient(transparent, var(--text-color) 10%);
+    color: var(--compl-color);
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    list-style: none;
+}
+
+.services__item {
+    flex-basis: 18rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    height: 12rem;
+    background: linear-gradient(to left, var(--wood-light) 50%, var(--color-sec));
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #888;
+}
+
+.services__item:nth-child(even) {
+    flex-direction: row-reverse;
+    background: linear-gradient(to right, var(--wood-light) 60%, var(--color-sec));
+}
+
+.services__item-img {
+    width: 30%;
+}
+
+.services__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+}
+
+.services__item-text-head {
+    color: var(--compl-color);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
+.services__item-text-desc {
+    color: var(--compl-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+
+/************************************ SERVICES RULES *****************************************/
+.projects {
+    background-color: var(--light-color);
+    color: var(--compl-color);
+}
+
+.projects__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    list-style: none;
+}
+
+.projects__item {
+    flex-basis: 30rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem;
+    height: 22rem;
+    max-width: 50rem;
+    background: linear-gradient(to bottom, #0008 50%, var(--compl-color)), url("/imgs/background-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #1118;
+}
+
+.projects__item-text {
+    padding: 1rem 1rem;
+    color: var(--color-main);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid var(--color-main);
+}
+
+.projects__item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    list-style: square;
+}
+
+.projects__item-item {
+    color: #ddd;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+/************************************ PROCESS RULES *****************************************/
+.process {
+    color: #eee;
+    background-color: var(--color-sec);
+}
+
+.process__list-step {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    list-style: none;
+}
+
+.process__step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 80%;
+    height: 10rem;
+    max-width: 40rem;
+}
+
+.process__step:nth-child(even) {
+    align-self: flex-end;
+}
+
+.process__step-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--wood-light);
+    border-radius: 3.5rem;
+}
+
+.process__step-img {
+    width: 3.5rem;
+}
+
+.process__step-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+}
+
+.process__step-text-head {
+    color: var(--color-main);
+    font-weight: 600;
+}
+
+.process__step-text-desc {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
