@@ -198,6 +198,37 @@
                 </li>
             </ol>
         </section>
+        <section class="cta section">
+            <h2 class="cta__header section-header">Start Your Transformation</h2>
+            <p class="cta__description section-description">Let's bring your dream space to life - reach out today!</p>
+            <form class="cta__form" action="">
+                <label class="cta__label cta__name" for="name">Full Name
+                    <input class="cta__input" type="text" name="name" id="name" placeholder="John Doe" required>
+                </label>
+                <label class="cta__label cta__tel" for="tel">Telephone Number
+                    <input class="cta__input" type="tel" name="tel" id="tel" placeholder="+1 ..." required>
+                </label>
+                <label class="cta__label cta__email" for="email">Email
+                    <input class="cta__input" type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+                </label>
+                <label class="cta__label cta__type" for="type">Work Type
+                    <select class="cta__input" name="work-type" id="type">
+                        <option value="remodelation">Remodelation</option>
+                        <option value="expansion">Expansion</option>
+                        <option value="renovation">Renovation</option>
+                        <option value="repair">Repair</option>
+                    </select>
+                </label>
+                <label class="cta__label cta__text" for="text">Description
+                    <textarea class="cta__input" name="text" id="text" placeholder="I want to ..." required></textarea>
+                </label>
+                <label class="cta__label cta__check" for="privacity">Accept Privacity Therms and Conditions
+                    <input class="cta__input" type="checkbox" id="privacity" required>
+                    <span class="cta__check-slider"></span>
+                </label>
+                <button class="cta__button cta__button" type="submit">Submit</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>
