@@ -261,21 +261,21 @@ main {
 }
 
 .services__item-text-head {
-    color: var(--compl-color);
-    font-weight: 600;
+    color: var(--text-color);
+    font-weight: 700;
     text-align: center;
     letter-spacing: 0.15rem;
 }
 
 .services__item-text-desc {
-    color: var(--compl-color);
+    color: var(--text-color);
     font-size: 0.8rem;
     font-weight: 400;
     text-align: center;
     letter-spacing: 0.05rem;
 }
 
-/************************************ SERVICES RULES *****************************************/
+/************************************ PROJECTS RULES *****************************************/
 .projects {
     background-color: var(--light-color);
     color: var(--compl-color);
@@ -382,7 +382,7 @@ main {
 
 .process__step-text-head {
     color: var(--color-main);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .process__step-text-desc {
@@ -391,7 +391,50 @@ main {
     font-size: 0.8rem;
 }
 
-/************************************ PROCESS RULES *****************************************/
+/************************************ CONTACT RULES *****************************************/
+.contact {
+    color: var(--compl-color);
+    background-color: var(--text-color);
+}
+
+.contact__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact__item {
+    flex-basis: 18rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--color-sec), var(--wood-light) 50%);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #888;
+}
+
+.contact__item-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.contact__item-head {
+    color: #eee;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.contact__item-link {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+/************************************ CTA RULES *****************************************/
 .cta {
     color: var(--compl-color);
     background-color: var(--light-color);
@@ -410,9 +453,9 @@ main {
     flex-direction: column;
     align-items: stretch;
     gap: 0.3rem;
-    color: var(--color-sec);
-    font-size: 0.8rem;
-    font-weight: 500;
+    color: var(--compl-color);
+    font-size: 0.9rem;
+    font-weight: 600;
     letter-spacing: 0.1rem;
 }
 
@@ -426,6 +469,7 @@ main {
     background-color: var(--text-color);
     border: 1px solid var(--color-sec);
     border-radius: 0.5rem;
+    box-shadow: inset 0 0 1rem #aaa;
 }
 
 .cta__input > option {
@@ -490,7 +534,7 @@ main {
 }
 
 .cta__check input:checked + .cta__check-slider {
-    background-color: var(--wood-light);
+    background-color: var(--color-sec);
 }
 
 .cta__check input:checked + .cta__check-slider:before {
@@ -515,7 +559,7 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    background-color: var(--wood-light);
+    background-color: var(--color-sec);
     border-radius: 0.8rem;
     border: 1px solid #1115;
     box-shadow: 0 0 0.5rem #1118;
