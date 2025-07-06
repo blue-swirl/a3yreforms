@@ -29,7 +29,7 @@ html {
 }
 
 main {
-    background-image: linear-gradient(#111, #0009, #0003), url("/imgs/background-hero.jpg");
+    background-image: linear-gradient(#111, #0009, #0003), url("/imgs/backgrounds/background-hero.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -83,7 +83,7 @@ main {
 
 .header__firm-title {
     display: none;
-    color: var(--color-main);
+    color: #eee;
     font-size: 1rem;
     font-family: Rajdhani;
     letter-spacing: 0.2rem;
@@ -116,12 +116,8 @@ main {
     height: 1.2rem;
 }
 
-.header__firm-logo .dark {
-    fill: var(--color-sec);
-}
-
 .header__firm-logo .light {
-    fill: var(--color-main);
+    fill: #eee;
 }
 
 .header__nav-link-text {
@@ -152,10 +148,6 @@ main {
 
 .hero__firm-logo {
     width: 7rem;
-}
-
-.hero__firm-logo .light {
-    fill: var(--color-main);
 }
 
 .hero__firm-title {
@@ -320,7 +312,7 @@ main {
     padding: 2.5rem;
     height: 22rem;
     max-width: 40rem;
-    background: linear-gradient(to bottom, #0008 50%, var(--compl-color)), url("/imgs/background-hero.jpg");
+    background: linear-gradient(to bottom, #0008 50%, var(--compl-color)), url("/imgs/backgrounds/bathroom.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 1rem;
@@ -330,7 +322,7 @@ main {
 
 .projects__item:hover {
     transform: scale(1.1);
-    background: linear-gradient(to bottom, #0005 70%, var(--compl-color)), url("/imgs/background-hero.jpg");
+    background: linear-gradient(to bottom, #0005 70%, var(--compl-color)), url("/imgs/backgrounds/bathroom.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -709,10 +701,6 @@ main {
     width: 4rem;
 }
 
-.footer__firm-logo .light {
-    fill: var(--color-main);
-}
-
 .footer__firm-title {
     width: 8rem;
     color: var(--color-main);
@@ -877,6 +865,6 @@ main {
 
 @media screen and (min-width: 1600px) {
     html {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
