@@ -1,12 +1,12 @@
 /************************************ FONTS RULES *****************************************/
 @font-face {
     font-family: Rajdhani;
-    src: url("/fonts/Rajdhani-Bold.ttf");
+    src: url("../fonts/Rajdhani-Bold.ttf");
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+    src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
 /************************************ GLOBAL RULES *****************************************/
@@ -29,7 +29,7 @@ html {
 }
 
 main {
-    background-image: linear-gradient(#111, #0009, #0003), url("/imgs/backgrounds/background-hero.webp");
+    background-image: linear-gradient(#111, #0009, #0003), url("../imgs/backgrounds/background-hero.webp");
     background-position: center;
     background-size: 150vh;
     background-attachment: fixed;
@@ -313,7 +313,7 @@ main {
     padding: 2.5rem;
     height: 22rem;
     max-width: 40rem;
-    background: linear-gradient(to bottom, #0008 50%, var(--compl-color)), url("/imgs/backgrounds/bathroom.webp");
+    background: linear-gradient(to bottom, #0008 50%, var(--compl-color)), url("../imgs/backgrounds/bathroom.webp");
     background-position: center;
     background-size: cover;
     border-radius: 1rem;
@@ -323,7 +323,7 @@ main {
 
 .projects__item:hover {
     transform: scale(1.1);
-    background: linear-gradient(to bottom, #0005 70%, var(--compl-color)), url("/imgs/backgrounds/bathroom.webp");
+    background: linear-gradient(to bottom, #0005 70%, var(--compl-color)), url("../imgs/backgrounds/bathroom.webp");
     background-position: center;
     background-size: cover;
 }
