@@ -1,11 +1,13 @@
 /************************************ FONTS RULES *****************************************/
 @font-face {
     font-family: Rajdhani;
+    font-display: swap;
     src: url("../fonts/Rajdhani-Bold.ttf");
 }
 
 @font-face {
     font-family: OpenSans;
+    font-display: swap;
     src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
@@ -21,7 +23,7 @@ html {
     font-size: 16px;
     font-family: OpenSans;
     --color-main: #f0e021;
-    --color-sec: #ad6a4b;
+    --color-sec: #a26242;
     --compl-color:  #7f390b;
     --wood-light:  #c19a6b;
     --text-color: #fcf3e9;
@@ -66,6 +68,7 @@ main {
     justify-content: space-between;
     padding: 1rem 1rem  0.8rem 1rem;
     width: 100vw;
+    font-weight: 500;
     background-color: var(--color-sec);
     box-shadow: 0 0 0.5rem #444;
     z-index: 10;
@@ -83,7 +86,7 @@ main {
 
 .header__firm-title {
     display: none;
-    color: #eee;
+    color: #fff;
     font-size: 1rem;
     font-weight: 500;
     font-family: Rajdhani;
@@ -118,12 +121,12 @@ main {
 }
 
 .header__firm-logo .light {
-    fill: #eee;
+    fill: #fff;
 }
 
 .header__nav-link-text {
     display: none;
-    color: #eee;
+    color: #fff;
     font-size: 0.6rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -148,13 +151,13 @@ main {
 }
 
 .hero__firm-logo {
-    width: 7rem;
+    width: 6rem;
 }
 
 .hero__firm-title {
     width: 10rem;
     color: var(--color-main);
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 800;
     font-family: Rajdhani;
     text-transform: uppercase;
@@ -164,7 +167,7 @@ main {
 
 .hero__firm-title-under {
     display: block;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: OpenSans;
     font-weight: 400;
     letter-spacing: 0.1rem;
@@ -364,7 +367,7 @@ main {
 
 /************************************ PROCESS RULES *****************************************/
 .process {
-    color: #eee;
+    color: #fff;
     background-color: var(--color-sec);
 }
 
@@ -623,7 +626,7 @@ main {
     max-width: 30rem;
     color: #fff;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     background-color: var(--color-sec);
@@ -644,7 +647,8 @@ main {
     flex-direction: column;
     gap: 4rem;
     background: var(--color-sec);
-    color: var(--text-color);
+    color: #fff;
+    font-weight: 500;
 }
 
 .footer__info {
@@ -653,17 +657,18 @@ main {
     gap: 4rem 1.5rem;
 }
 
+.footer__part {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
 .footer__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     list-style: none;
-}
-
-.footer__list:first-child {
-    text-transform: uppercase;
-    font-size: 0.9rem;
 }
 
 .footer__list-title {
@@ -671,17 +676,21 @@ main {
     color: var(--color-main);
     font-size: 1.1rem;
     text-transform: capitalize;
+    text-align: center;
     letter-spacing: 0.3rem;
     border-bottom: 1px solid var(--color-main);
 }
 
 .footer__list-link {
     display: block;
+    padding: 0.5rem;
     color: var(--text-color);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
+    text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2rem;
+    text-shadow: 0 0 0.7rem var(--compl-color);
 }
 
 .footer__firm {
@@ -717,7 +726,7 @@ main {
     display: block;
     font-size: 1.3rem;
     font-family: OpenSans;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.1rem;
 }
 
@@ -729,13 +738,15 @@ main {
 }
 
 .footer__slogan-1st {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
+    text-shadow: 0 0 0.7rem var(--compl-color);
 }
 
 .footer__slogan-2nd {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 800;
+    text-shadow: 0 0 0.7rem var(--compl-color);
 }
 
 .footer__rights {
@@ -746,14 +757,16 @@ main {
 }
 
 .footer__copyrights {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    text-shadow: 0 0 0.7rem var(--compl-color);
 }
 
 .footer__credits {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 0.05rem;
+    text-shadow: 0 0 0.7rem var(--compl-color);
 }
 
 .footer__credits a {
