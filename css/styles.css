@@ -275,6 +275,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+    max-width: 100%;
     aspect-ratio: 1;
     background: linear-gradient(to left, var(--wood-light) 50%, var(--color-sec));
     border-radius: 1rem;
@@ -427,7 +428,7 @@ a {
     align-items: center;
     padding-left: 1rem;
     gap: 1.5rem;
-    width: min(90%, 24rem);
+    width: min(100%, 24rem);
     height: 8rem;
     background: linear-gradient(to right, #7f390bbb, transparent 90%);
     border-radius: 4rem;
@@ -471,7 +472,7 @@ a {
 .steps-list__desc {
     color: var(--text-color);
     font-weight: 400;
-    font-size: var(--font-dc);
+    font-size: var(--font-sm);
     letter-spacing: 0.05rem;
 }
 
@@ -499,6 +500,7 @@ a {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    max-width: 100%;
     background: linear-gradient(to right, var(--color-sec), var(--wood-light) 50%);
     border-radius: 1rem;
     box-shadow: 0 0 1rem #0006;
@@ -535,7 +537,7 @@ a {
     color: var(--text-color);
     font-size: var(--font-sm);
     letter-spacing: 0.1rem;
-    word-wrap: break-word;
+    word-break: break-all;
 }
 
 /************************************ CTA RULES *****************************************/
@@ -793,6 +795,11 @@ a {
 @media screen and (min-width: 400px) {
     .services-list__item {
         aspect-ratio: 2;
+    }
+
+    .contact-list__link {
+        word-break: initial;
+        word-wrap: break-word;
     }
 }
 
