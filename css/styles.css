@@ -8,12 +8,12 @@
 
 
 :root {
-    --color-main: #f0e021;
-    --color-sec: #a26242;
-    --compl-color:  #7f390b;
-    --wood-light:  #c19a6b;
-    --text-color: #fcf3e9;
-    --light-color: #c8c2b7;
+    --color-main: #FFD057;
+    --color-sec: #24446A;
+    --color-dark:  #14243A;
+    --color-light:  #6390B1;
+    --text-color: #f5f5f5;
+    --error-color: #cc0000;
     --font-h1: 3.3rem;
     --font-h2: 1.8rem;
     --font-h3: 1.3rem;
@@ -78,7 +78,7 @@ a {
 }
 
 .firm__slogan-container {
-    color: #eee;
+    color: var(--text-color);
     text-transform: lowercase;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -121,9 +121,9 @@ a {
 
 .header-firm__title {
     display: none;
-    color: #fff;
+    color: var(--text-color);
     font-size: var(--font-sm);
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.2rem;
 }
 
@@ -155,15 +155,11 @@ a {
     height: 1.1rem;
 }
 
-.header-firm__logo .light {
-    fill: #fff;
-}
-
 .header-nav__text {
     display: none;
-    color: #fff;
+    color: var(--text-color);
     font-size: var(--font-sm);
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.1rem;
 }
 
@@ -176,7 +172,7 @@ a {
     padding: 2rem 1.5rem;
     padding-top: 8rem;
     height: 100vh;
-    background-image: linear-gradient(#111, #0009, #0003), url("../assets/imgs/background-hero.webp");
+    background-image: linear-gradient(#000, #0009, #0003), url("../assets/imgs/hero-bg-small.webp");
     background-position: center;
     background-size: cover;
     overflow: clip;
@@ -189,7 +185,7 @@ a {
 }
 
 .hero-firm__logo {
-    width: 6rem;
+    width: 10rem;
     animation: fade-in-left 1s ease .5s both;
 }
 
@@ -254,7 +250,7 @@ a {
 /************************************ SERVICES RULES *****************************************/
 .services {
     background: var(--text-color);
-    color: var(--compl-color);
+    color: var(--color-sec);
 }
 
 .services-list {
@@ -277,7 +273,7 @@ a {
     gap: 1rem;
     max-width: 100%;
     aspect-ratio: 1;
-    background: linear-gradient(to left, var(--wood-light) 50%, var(--color-sec));
+    background: linear-gradient(to left, var(--color-light) 50%, var(--color-sec));
     border-radius: 1rem;
     border: 1px solid #0006;
     box-shadow: 0 0 1rem #0006;
@@ -288,7 +284,7 @@ a {
 
 .services-list__item:nth-child(even) {
     flex-direction: row-reverse;
-    background: linear-gradient(to right, var(--wood-light) 60%, var(--color-sec));
+    background: linear-gradient(to right, var(--color-light) 60%, var(--color-sec));
 }
 
 .services-list__img {
@@ -304,7 +300,7 @@ a {
 }
 
 .services-list__head {
-    color: var(--compl-color);
+    color: var(--color-sec);
     font-size: var(--font-h3);
     font-weight: 700;
     text-align: center;
@@ -313,12 +309,12 @@ a {
 }
 
 .services-list__head::first-letter {
-    color: var(--color-main);
+    color: var(--text-color);
     font-size: var(--font-h2);
 }
 
 .services-list__desc {
-    color: var(--compl-color);
+    color: #fff;
     font-size: var(--font-sm);
     font-weight: 400;
     text-align: center;
@@ -327,8 +323,8 @@ a {
 
 /************************************ PROJECTS RULES *****************************************/
 .projects {
-    background-color: var(--light-color);
-    color: var(--compl-color);
+    background-color: var(--color-light);
+    color: var(--text-color);
 }
 
 .projects-list {
@@ -362,7 +358,6 @@ a {
 }
 
 .projects-list__item:hover {
-    transform: scale(1.1);
     background: linear-gradient(to bottom, #0005 70%, #111), url("../assets/imgs/bathroom.webp");
     background-position: center;
     background-size: cover;
@@ -430,7 +425,7 @@ a {
     gap: 1.5rem;
     width: min(100%, 24rem);
     height: 8rem;
-    background: linear-gradient(to right, #7f390bbb, transparent 90%);
+    background: linear-gradient(to right, var(--color-dark), transparent 90%);
     border-radius: 4rem;
     animation: fade-in-bottom ease both;
     animation-timeline: view();
@@ -447,7 +442,7 @@ a {
     align-items: center;
     min-width: 6rem;
     min-height: 6rem;
-    background-color: var(--wood-light);
+    background-color: var(--color-light);
     border-radius: 50%;
 }
 
@@ -478,30 +473,30 @@ a {
 
 /************************************ CONTACT RULES *****************************************/
 .contact {
-    color: var(--compl-color);
+    color: var(--color-sec);
     background-color: var(--text-color);
 }
 
 .contact-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 40rem;
+    gap: 1rem;
+    max-width: 45rem;
     animation: fade-in-bottom ease both;
     animation-timeline: view();
     animation-range-end: contain 60%;
 }
 
 .contact-list__item {
-    flex: 1 0 min(16rem, 100%);
+    flex: 1 0 min(20rem, 100%);
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 1rem;
-    max-width: 100%;
-    background: linear-gradient(to right, var(--color-sec), var(--wood-light) 50%);
+    max-width: min(20rem, 100%);
+    background: linear-gradient(to right, var(--color-sec), var(--color-light) 50%);
     border-radius: 1rem;
     box-shadow: 0 0 1rem #0006;
     transition: box-shadow 0.3s, transform .3s;
@@ -525,6 +520,7 @@ a {
     flex-direction: column;
     gap: 0.5rem;
     text-decoration: none;
+    text-overflow: clip;
 }
 
 .contact-list__head {
@@ -537,13 +533,12 @@ a {
     color: var(--text-color);
     font-size: var(--font-sm);
     letter-spacing: 0.1rem;
-    word-break: break-all;
 }
 
 /************************************ CTA RULES *****************************************/
 .cta {
-    color: var(--compl-color);
-    background-color: var(--light-color);
+    color: var(--text-color);
+    background-color: var(--color-light);
 }
 
 .cta-form{
@@ -562,7 +557,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    color: var(--compl-color);
+    color: var(--text-color);
     font-size: var(--font-sm);
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -574,41 +569,37 @@ a {
 .cta-form__input {
     padding: 0.7rem;
     width: 100%;
-    color: var(--compl-color);
-    font-size: var(--font-dc);
+    color: var(--color-dark);
+    font-size: var(--font-sm);
     font-family: inherit;
     letter-spacing: 0.05rem;
     background-color: var(--text-color);
-    border: 1px solid var(--wood-light);
+    border: 1px solid var(--color-sec);
     border-radius: 0.5rem;
-    box-shadow: inset 0 0 0.3rem var(--wood-light);
     transition: border 0.2s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .cta-form__input::placeholder {
-    color: var(--wood-light);
+    color: var(--color-light);
 }
 
 .cta-form__input:focus-visible {
-    background-color: var(--text-color);
-    border: 1px solid var(--compl-color);
-    box-shadow: inset 0 0 0.3rem var(--wood-light);
+    background-color: #ddd;
     outline: none;
 }
 
 .cta-form__input:focus-visible::placeholder {
-    opacity: 0.5;
+    opacity: 0.8;
     transform: translateX(20px);
 }
 
 .cta-form__input:invalid:not(:placeholder-shown) {
-    border: 1px solid #c00;
-    box-shadow: inset 0 0 0.3rem #c00;
-    color: #c00;
+    border: 2px solid var(--error-color);
+    color: var(--error-color);
 }
 
 .cta-form__label:has(.cta-form__input:invalid:not(:placeholder-shown)) {
-    color: #c00;
+    color: var(--error-color);
 }
 
 .cta-form__input > option {
@@ -617,6 +608,8 @@ a {
 
 .cta-form__text textarea {
     resize: none;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .cta-form__check {
@@ -626,7 +619,7 @@ a {
     gap: 1rem;
     margin: auto;
     margin: 2rem 0;
-    color: var(--compl-color) !important;
+    color: var(--color-dark) !important;
     font-size: var(--font-dc);
     font-weight: 500;
 }
@@ -636,7 +629,7 @@ a {
     display: inline-block;
     min-width: 2.5rem;
     height: 1.5rem;
-    background-color: #888;
+    background-color: var(--text-color);
     border-radius: 1.5rem;
     transition: background-color 0.3s;
 }
@@ -648,13 +641,17 @@ a {
     min-width: 1rem;
     left: 0.25rem;
     top: 0.25rem;
-    background-color: #eee;
+    background-color: var(--color-sec);
     border-radius: 50%;
     transition: transform .4s;
 }
 
 .cta-form__input[type='checkbox']:checked + .cta-form__check-slider {
     background-color: var(--color-sec);
+}
+
+.cta-form__input[type='checkbox']:checked + .cta-form__check-slider:before {
+    background-color: var(--text-color);
 }
 
 .cta-form__input[type='checkbox']:checked + .cta-form__check-slider:before {
@@ -728,7 +725,6 @@ a {
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.2rem;
-    text-shadow: 0 0 0.5rem var(--compl-color);
 }
 
 .footer-info__firm {
@@ -751,7 +747,6 @@ a {
 
 .footer-info__slogan-container {
     font-size: var(--font-dc);
-    text-shadow: 0 0 0.5rem var(--compl-color);
 }
 
 .footer-firm__head {
@@ -761,7 +756,7 @@ a {
 }
 
 .footer-firm__logo {
-    width: 4rem;
+    width: 6rem;
 }
 
 .footer-rights {
@@ -775,13 +770,11 @@ a {
     font-size: var(--font-sm);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    text-shadow: 0 0 0.5rem var(--compl-color);
 }
 
 .footer-rights__credits {
     font-size: var(--font-sm);
     letter-spacing: 0.05rem;
-    text-shadow: 0 0 0.5rem var(--compl-color);
 }
 
 .footer-rights__credits a {
@@ -797,9 +790,8 @@ a {
         aspect-ratio: 2;
     }
 
-    .contact-list__link {
-        word-break: initial;
-        word-wrap: break-word;
+    .footer-info__firm {
+        grid-column: span 2;
     }
 }
 
@@ -817,10 +809,6 @@ a {
     }
 
     .cta-form__button {
-        grid-column: span 2;
-    }
-
-    .footer-info__firm {
         grid-column: span 2;
     }
 }
@@ -885,6 +873,9 @@ a {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         padding: 10rem 8rem;
+        background-image: linear-gradient(#000, #0009, #0003), url("../assets/imgs/hero-bg-big.webp");
+        background-position: center;
+        background-size: cover;
     }
 
     .hero-firm {
