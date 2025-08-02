@@ -1,5 +1,5 @@
 {
-  "name": "A3Y Reforms ",
+  "name": "A3Y Reforms",
   "short_name": "A3Y",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ad6a4b",
-  "background_color": "#ad6a4b",
+  "theme_color": "#24446A",
+  "background_color": "#24446A",
   "display": "standalone"
 }
